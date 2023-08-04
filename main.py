@@ -8,9 +8,9 @@ for q in question_data:
     question_bank.append(new_question)
 
 quiz = QuizBrain(question_bank)
-quiz_ui = QuizInterface()
+quiz_ui = QuizInterface(quiz)
 
-still_has_questions = quiz.still_has_questions()
+# still_has_questions = quiz.still_has_questions()
 # while quiz.still_has_questions():
 #     quiz.next_question()
 #     quiz.still_has_questions()
